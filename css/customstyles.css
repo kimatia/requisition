@@ -1,0 +1,472 @@
+@font-face {
+    font-family: Tcm;
+    src: url('../fonts/TCM.ttf');
+}
+html,
+body {
+    height: 100vh;
+    
+    zoom: 100%;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", 
+     Arial, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Tcm', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.row{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+::selection {
+  background: #000;
+  color: #fff;
+}
+::-moz-selection {
+    background: #000;
+    color: #fff;
+}
+#title{
+    font-family: TCM;
+}
+#stop{
+    padding-bottom: 25px;
+}
+/*end of presets*/
+/*styling for my navbar*/
+.navbar-custom{
+    width: 100%;
+}
+#mybrand{
+    color: #bbb;
+    background-color: ;
+    text-align: center;
+    font-size: 19px;
+    letter-spacing: 4px;
+    transition: color 2s;
+    font-family: tcm;
+    font-weight: 600;
+}
+#mybrand:hover{
+    color: #eee;
+}
+#myNavbar a{
+    font-size: 11px;
+
+}
+
+
+@media (min-width: 768px) {
+    .navbar-custom .nav.navbar-nav{
+        float: right;
+        vertical-align: top;
+    }
+
+    .navbar-custom .navbar-collapse {
+        text-align: center;
+    }
+}
+.navbar-custom .nav li{
+    padding-right: 7px;
+}
+
+.navbar-custom .nav li a {
+    color: #bbb;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 12px 8px;
+    transition: color 400ms ease-in-out;
+
+}
+
+.navbar-custom .nav li a:hover{
+    background-color: transparent;
+    color: rgb(38, 205, 164);
+}
+.navbar-custom .nav li a:focus{
+    background-color: transparent;
+    color: rgb(38, 205, 164);
+}
+.navbar-custom li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    color: rgb(38, 205, 164);
+    border: none;
+    background-color: transparent;
+}
+.navbar-custom li a.focus{
+    background-color: transparent;
+}
+.navbar-custom a {
+    text-decoration: none;
+}
+@media (min-width: 768px) {
+    .navbar-custom {
+        padding: 25px 0;
+
+        background: 0 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out
+    }
+    .navbar-custom .nav li a{
+        font-size: 1.2rem;
+    }
+    .navbar-custom.top-nav-collapse {
+        padding: 1px 0px;
+        background: #000;
+        opacity: 0.9;
+         border-bottom-color: #000;
+    }
+    .navbar-custom.top-nav-collapse .nav li a{
+        font-size: 1.2rem;
+    }
+    .navbar-custom #mybrand{
+        margin-bottom: 0px;
+    }
+}
+.nav i{
+    font-size: 17px;
+}
+#myfooter{
+    text-align: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    bottom: 1px;
+    margin-bottom: 10px;
+    color: #fff;
+    letter-spacing: 2px;
+    font-family: tcm;
+    
+}
+
+/*end of  styling for navbar*/
+
+* { color:#fff; text-decoration: none;}
+
+#cursor{
+	animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    position: absolute;
+}
+
+
+#landing-page{
+    height: 60%;
+    width: 100%;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/landing/5.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/landing/5.jpg');
+    background: -moz-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/landing/5.jpg');
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/landing/2.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+#services{
+    background-color: lightgray;
+    min-height: 300px;
+}
+
+#services h1{
+    font-family: tcm;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #000;
+    margin-top: 0px;
+    padding-top: 20px;
+}
+#my-cards{
+    padding-top: 30px;
+}
+.card{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 3px;
+    color: rgba(0,0,0, 0.87);
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+.card i{
+    color: #F0505A;
+    padding: 20px 0px;
+}
+.card h2{
+    font-family: 'Cabin';
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+
+
+
+
+.modal .modal-dialog{
+    margin-top: 100px;
+}
+
+
+
+.modal-content {
+    box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
+    border-radius: 6px;
+    border: none;
+}
+
+
+.modal .modal-header .close {
+    color: #000;
+}
+
+
+
+.modal-body h5{
+    text-align: center;
+    padding: 10px 0px;
+    margin-bottom: 5px;
+    color: #00c8aa;
+}
+#modal-footer{
+    padding-top: 5px;
+}
+.modal-body{
+    text-align: center;
+}
+.modal-body i{
+    padding: 10px 0px;
+    
+}
+
+#my-modal-content{
+    text-align: center;
+    padding-top: 10px;
+    color: #000;
+    font-weight: 400;
+}
+
+.modal-footer{
+    text-align: center;
+    padding: 10px 15px 15px 15px;
+}
+#modal-btn{
+    color: #000;
+    background-color: #fff;
+    font-size: 1.0rem;
+    line-height: 1.33;
+    border-width: 2px;
+    border-color: #000;
+    border-radius: 0px;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    letter-spacing: 2px;
+}
+#footer-p{
+    padding-top: 10px;
+}
+
+
+
+
+body.modal-open .supreme-container{
+    -webkit-filter: blur(8px) grayscale(90%);
+    -moz-filter: blur(5px) grayscale(90%);
+    -o-filter: blur(5px) grayscale(90%);
+    -ms-filter: blur(5px) grayscale(90%);
+}
+
+
+
+.modal-content h5{
+    color: #000;
+}
+.modal-content i{
+    color: #000;
+    padding-right: 10px;
+}
+
+input{
+    border: none;
+    border-bottom: 1px solid #898989;
+    padding: 10px;
+    color: #898989;
+}
+input:focus{
+    outline: none;
+     border: none;
+    border-bottom: 1px solid #F0505A;
+}
+#submit-btn{
+    width: 80%;
+    color: #fff;
+    background-color: #000;
+    outline: none;
+    font-size: 1.0rem;
+    border-width: 2px;
+    border-color: #000;
+    border-radius: 2px;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    letter-spacing: 2px;
+    -webkit-transition : border 700ms ease-out;
+    -moz-transition : border 700ms ease-out;
+    -o-transition : border 700ms ease-out;
+    transition : border 700ms ease-out;
+}
+#submit-btn:hover{
+    border-color: #aaa;
+    color: #000;
+    background-color: transparent;
+}
+
+
+.dept{
+    color: #000;
+    padding-left: 10px;
+}
+option{
+    color: #000;
+}
+
+#login,
+#datadiv{
+    height: 100%;
+    width: 100%;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/landing/5.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/landing/5.jpg');
+    background: -moz-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/landing/5.jpg');
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/landing/2.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#loginform{
+    background-color: #fff;
+    margin-top: 150px;
+    border-radius: 6px;
+    max-width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#loginform i{
+    color: #000;
+    padding-right: 20px;
+}
+fieldset{
+    padding-left: 30px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+#login-input{
+    width: 80%;
+}
+#login-btn{
+    min-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    background-color: #000;
+    outline: none;
+    font-size: 1.0rem;
+    border-width: 2px;
+    border-color: #000;
+    border-radius: 2px;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    letter-spacing: 2px;
+    -webkit-transition : border 700ms ease-out;
+    -moz-transition : border 700ms ease-out;
+    -o-transition : border 700ms ease-out;
+    transition : border 700ms ease-out;
+}
+#login-btn:hover{
+    border-color: #aaa;
+    color: #000;
+    background-color: transparent;
+}
+#mybtn{
+    margin-top: 80px;
+    text-align: center;
+}
+
+
+#loginform h5{
+    color: #000;
+    font-family: tcm;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+
+
+
+
+
+#mycaption h1{
+    font-family: tcm;
+    text-align: center;
+    letter-spacing: 3px;
+    color: #fff;
+}
+th{
+    color: #fff;
+    text-align: center;
+    letter-spacing: 3px;
+}
+td{
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    letter-spacing: 3px;
+
+}
+th:hover{
+    background-color: #000;
+}
+td:hover{
+    background-color: transparent;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*the end*/
